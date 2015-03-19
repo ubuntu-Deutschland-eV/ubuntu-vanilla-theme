@@ -1,7 +1,7 @@
 {
-  "name": "canonical-vanilla-theme",
-  "version": "0.0.6",
-  "description": "A Canonical flavoured theme for the wonderfully simple, extendable CSS framework.",
+  "name": "ubuntu-vanilla-theme",
+  "version": "0.0.1",
+  "description": "A Ubuntu flavoured theme for the wonderfully simple, extendable CSS framework.",
   "author": {
     "name": "Canonical Webteam",
     "email": "webteam@canonical.com",
@@ -42,7 +42,7 @@
   },
   "repository": {
   "type" : "git",
-  "url" : "https://github.com/ubuntudesign/canonical-vanilla-theme"
+  "url" : "https://github.com/ubuntudesign/ubuntu-vanilla-theme"
   },
   "dependencies": {
      "vanilla-framework": "^0.0.7"
