@@ -9,7 +9,9 @@
 @import 'modules/arrows';
 @import 'modules/boxes';
 
-@include vanilla;
-@include ubuntu-arrows;
-@include ubuntu-boxes;
+@mixin ubuntu-vanilla-theme {
+	@include vanilla;
+	@include ubuntu-arrows;
+	@include ubuntu-boxes;
+}
 
