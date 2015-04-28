@@ -1,0 +1,15 @@
+
+// Theme variables
+@import 'global-settings';
+
+// import required files
+@import '../node_modules/vanilla-framework/scss/vanilla';
+
+/// ubuntu element styles
+@import 'modules/arrows';
+@import 'modules/boxes';
+
+@include vanilla;
+@include ubuntu-arrows;
+@include ubuntu-boxes;
+
