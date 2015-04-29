@@ -12,10 +12,10 @@
 @import 'modules/boxes';
 
 @mixin ubuntu-vanilla-theme {
-	@include vanilla;
-	@include ubuntu-base;
-	@include ubuntu-grid;
-	@include ubuntu-arrows;
-	@include ubuntu-boxes;
+  @include vanilla;
+  @include ubuntu-base;
+  @include ubuntu-grid;
+  @include ubuntu-arrows;
+  @include ubuntu-boxes;
 }
 
