@@ -6,12 +6,16 @@
 @import '../node_modules/vanilla-framework/scss/vanilla';
 
 /// ubuntu element styles
+@import 'modules/base';
+@import 'modules/grid';
 @import 'modules/arrows';
 @import 'modules/boxes';
 
 @mixin ubuntu-vanilla-theme {
-	@include vanilla;
-	@include ubuntu-arrows;
-	@include ubuntu-boxes;
+  @include vanilla;
+  @include ubuntu-base;
+  @include ubuntu-grid;
+  @include ubuntu-arrows;
+  @include ubuntu-boxes;
 }
 
