@@ -1,0 +1,24 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/ubuntu-vanilla-theme/docs/#mixin-ubuntu-inner-wrapper
+/// @since        0.0.2
+////
+
+/// grid classes
+/// @group grid
+
+@mixin ubuntu-grid() {
+  .wrapper {
+    margin: 0 auto;
+    width: $site-max-width;
+  }
+
+  .inner-wrapper {
+    background: $white;
+    border-radius: 4px;
+    box-shadow: 0 0 3px $mid-grey;
+    margin: 10px 0 30px;
+    padding-bottom: 20px;
+  }
+
+}
