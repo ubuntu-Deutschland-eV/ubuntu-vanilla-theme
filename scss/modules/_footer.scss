@@ -9,9 +9,8 @@
 /// Default footer styling
 @mixin ubuntu-footer() {
 
-	.top-link {
+  .top-link {
     position: absolute;
     left: -999em;
-	}
-
+  }
 }
