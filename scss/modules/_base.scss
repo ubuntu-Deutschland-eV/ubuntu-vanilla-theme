@@ -7,7 +7,9 @@
 /// Base classes
 /// @group Utils
 @mixin ubuntu-base {
-  body {
-    background: url('#{$asset-path}img/backgrounds/image-background-paper.png') repeat-y center top $light-grey;
+  @media only screen and (min-width : $breakpoint-medium) {
+    body {
+      background: url('#{$asset-path}img/backgrounds/image-background-paper.png') repeat-y center top $light-grey;
+    }
   }
 }
