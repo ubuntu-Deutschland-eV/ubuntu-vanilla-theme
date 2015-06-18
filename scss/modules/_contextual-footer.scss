@@ -19,7 +19,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-  
+      
     hr {
       box-shadow: inset 0 2px 2px -2px $warm-grey;
       background: $ubuntu-orange;
@@ -70,8 +70,9 @@
     }
     
     h3 {
-      font-size: 1em;
+      font-size: 1.5em;
       font-weight: normal;
+      margin-bottom: .75em;
     }
     
     .list a:after,
