@@ -8,8 +8,10 @@
 /// ubuntu element styles
 @import 'modules/base';
 @import 'modules/grid';
-@import 'modules/footer';
+@import 'modules/header';
 @import 'modules/contextual-footer';
+@import 'modules/footer';
+@import 'modules/helpers';
 @import 'modules/arrows';
 @import 'modules/boxes';
 
@@ -17,8 +19,10 @@
   @include vanilla;
   @include ubuntu-base;
   @include ubuntu-grid;
-  @include ubuntu-footer;
+  @include ubuntu-header;
   @include ubuntu-contextual-footer;
+  @include ubuntu-footer;
+  @include ubuntu-helpers;
   @include ubuntu-arrows;
   @include ubuntu-boxes;
 }
