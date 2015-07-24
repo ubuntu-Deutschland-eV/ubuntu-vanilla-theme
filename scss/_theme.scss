@@ -14,7 +14,6 @@
 @import 'modules/helpers';
 @import 'modules/arrows';
 @import 'modules/boxes';
-@import 'modules/lists';
 
 @mixin ubuntu-vanilla-theme {
   @include vanilla;
@@ -26,6 +25,5 @@
   @include ubuntu-helpers;
   @include ubuntu-arrows;
   @include ubuntu-boxes;
-  @include ubuntu-lists;
 }
 
