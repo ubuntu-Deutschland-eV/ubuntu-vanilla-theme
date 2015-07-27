@@ -18,7 +18,6 @@
     @extend %list-ticks;
     
     li {
-      @extend %list-ticks-item;
       background-image: svg-tick($canonical-aubergine);
     }
   }
