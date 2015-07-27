@@ -1,0 +1,25 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-ubuntu-lists
+
+/// @since        0.0.3
+////
+
+/// Canoical list styling
+/// @group Lists
+/// @example
+///   <ul>
+///     <li>...</li>
+///   </ul>
+@mixin ubuntu-lists {
+  
+  /// Canonical style lists with ticks 
+  .list-ticks--canonical {
+    @extend %list-ticks;
+    
+    li {
+      @extend %list-ticks-item;
+      background-image: svg-tick($canonical-aubergine);
+    }
+  }
+}
