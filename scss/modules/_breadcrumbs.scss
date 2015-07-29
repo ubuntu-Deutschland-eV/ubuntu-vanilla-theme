@@ -1,0 +1,39 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/ubuntu-vanilla-theme/docs/#mixin-ubuntu-breadcrumbs
+/// @since        0.0.3
+////
+
+/// Default breadcrumbs styling
+/// @group Breadcrumbs
+/// @example
+/// <nav role="navigation" class="nav-secondary clearfix" id="breadcrumbs">
+///     <ul class="breadcrumb">
+///         <li>
+///             <a href="/server/" class="breadcrumb-link">Section&nbsp;&rsaquo;</a>
+///             <div class="breadcrumb-toggle">
+///                 <a href="#" class="breadcrumb-toggle__close">Section</a>
+///                 <a href="#breadcrumbs" class="breadcrumb-toggle__open">Section</a>
+///             </div>
+///         </li>
+///     </ul>
+///     <ul class="second-level-nav">
+///         <li class="first">
+///             <a href="#">Sub section</a>
+///         </li>
+///         <li>
+///             <a href="#">Sub section</a>
+///         </li>
+///     </ul>
+/// </nav>
+@mixin ubuntu-breadcrumbs {
+  .nav-secondary {
+    @media only screen and (min-width: $navigation-threshold) {
+      border-width: 0 0 1px; // removes default left and right borders
+
+      .second-level-nav  li a {
+        padding: 8px 0 0;
+      }
+    }
+  }
+}

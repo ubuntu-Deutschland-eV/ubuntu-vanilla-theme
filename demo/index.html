@@ -49,6 +49,25 @@
     </header>
     <div class="wrapper">
         <div id="main-content" class="inner-wrapper">
+            <nav role="navigation" class="nav-secondary clearfix" id="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/server/" class="breadcrumb-link">Section&nbsp;&rsaquo;</a>
+                        <div class="breadcrumb-toggle">
+                            <a href="#" class="breadcrumb-toggle__close">Section</a>
+                            <a href="#breadcrumbs" class="breadcrumb-toggle__open">Section</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="second-level-nav">
+                    <li class="first">
+                        <a href="#">Sub section</a>
+                    </li>
+                    <li>
+                        <a href="#">Sub section</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="row" id="grid">
                 <h2>Grid</h2>
                 <div class="twelve-col box">.twelve-col</div>
@@ -384,7 +403,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-border">
                 <div class="six-col">
                     <h4>.list-ticks</h4>
                     <ul class="list-ticks">
