@@ -8,7 +8,7 @@
 @mixin ubuntu-grid() {
   .wrapper {
     margin: 0 auto;
-    width: $site-max-width;
+    max-width: $site-max-width;
   }
 
   .inner-wrapper {

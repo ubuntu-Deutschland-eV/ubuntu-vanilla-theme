@@ -1,4 +1,5 @@
 
+
 // Theme variables
 @import 'global-settings';
 
@@ -15,6 +16,7 @@
 @import 'modules/arrows';
 @import 'modules/boxes';
 @import 'modules/lists';
+@import 'modules/breadcrumbs';
 
 @mixin ubuntu-vanilla-theme {
   @include vanilla;
@@ -27,5 +29,6 @@
   @include ubuntu-arrows;
   @include ubuntu-boxes;
   @include ubuntu-lists;
+  @include ubuntu-breadcrumbs;
 }
 
