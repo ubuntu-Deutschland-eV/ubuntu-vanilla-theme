@@ -30,10 +30,6 @@
   .nav-secondary {
     @media only screen and (min-width: $navigation-threshold) {
       border-width: 0 0 1px; // removes default left and right borders
-
-      .second-level-nav  li a {
-        padding: 8px 0 0;
-      }
     }
   }
 }
