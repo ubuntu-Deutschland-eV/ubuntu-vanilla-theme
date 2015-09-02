@@ -10,19 +10,23 @@
 /// <nav role="navigation" class="nav-secondary clearfix" id="breadcrumbs">
 ///     <ul class="breadcrumb">
 ///         <li>
-///             <a href="/server/" class="breadcrumb-link">Section&nbsp;&rsaquo;</a>
-///             <div class="breadcrumb-toggle">
-///                 <a href="#" class="breadcrumb-toggle__close">Section</a>
-///                 <a href="#breadcrumbs" class="breadcrumb-toggle__open">Section</a>
-///             </div>
-///         </li>
-///     </ul>
-///     <ul class="second-level-nav">
-///         <li class="first">
-///             <a href="#">Sub section</a>
-///         </li>
-///         <li>
-///             <a href="#">Sub section</a>
+///             <a href="#" class="breadcrumb-link">Section</a>
+///             <ul class="second-level-nav">
+///                 <li>
+///                     <a href="#" class="active">Second level</a>
+///                     <ul class="third-level-nav">
+///                         <li>
+///                             <a class="active" href="#">third level</a>
+///                         </li>
+///                         <li>
+///                             <a href="#">third level</a>
+///                         </li>
+///                         <li>
+///                             <a href="#">third level</a>
+///                         </li>
+///                     </ul>
+///                  </li>
+///             </ul>
 ///         </li>
 ///     </ul>
 /// </nav>
