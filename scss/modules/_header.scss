@@ -9,6 +9,12 @@
 /// Default header styling
 @mixin ubuntu-header() {
   
+  @media only screen and (min-width: $navigation-threshold) {
+    .banner {
+      margin-bottom: 30px;
+    }
+  }
+  
   .banner .nav-primary ul {
     border: 0;
     
