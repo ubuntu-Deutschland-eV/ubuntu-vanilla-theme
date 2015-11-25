@@ -17,13 +17,9 @@
     background-image: url('https://assets.ubuntu.com/v1/62d597f6-background-grid.png');
     color: $white;
   
-    .list-ubuntu li {
-      border: 0;
-    }
-  
     .resource {
-      color: $text-color;
       box-shadow: none;
+      color: $text-color;
       padding-right: 20px;
     }
   
@@ -37,5 +33,9 @@
     .resource:hover:before {
       border-bottom-width: 34px;
     }
+  }
+  /// Full width row
+  .row.row-full-width {
+    padding: 0;
   }
 }
