@@ -20,4 +20,15 @@
       background-image: svg-tick($canonical-aubergine);
     }
   }
+
+  /// Canonical style lists with ticks 
+  .list-ticks--compact {
+    @extend %list-ticks;
+    
+    li {
+      background-image: svg-tick($bullet-color);
+      border: 0;
+      padding: 10px 0 0 25px;
+    }
+  }
 }
