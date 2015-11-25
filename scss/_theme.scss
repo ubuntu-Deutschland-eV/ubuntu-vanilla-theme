@@ -10,6 +10,7 @@
 @import 'modules/base';
 @import 'modules/grid';
 @import 'modules/header';
+@import 'modules/rows';
 @import 'modules/contextual-footer';
 @import 'modules/footer';
 @import 'modules/helpers';
@@ -23,6 +24,7 @@
   @include ubuntu-base;
   @include ubuntu-grid;
   @include ubuntu-header;
+  @include ubuntu-rows;
   @include ubuntu-contextual-footer;
   @include ubuntu-footer;
   @include ubuntu-helpers;
