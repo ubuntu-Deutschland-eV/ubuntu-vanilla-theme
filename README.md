@@ -1,6 +1,6 @@
 # Ubuntu vanilla theme for Vanilla framework
 
-A extenstion of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/).
+A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/).
 
 ## Local usage
 
