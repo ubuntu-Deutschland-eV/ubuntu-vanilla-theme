@@ -9,64 +9,34 @@
 @mixin ubuntu-contextual-footer() {
   .context-footer {
     box-sizing: border-box;
-    font-size: .75em;
-    border-bottom: 0;
     clear: both;
-    padding-bottom: 1px;
-    padding-top: 0;
+    display: block;
+    font-size: .75em;
+    padding: 0 10px;
     position: relative;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     width: 100%;
       
     hr {
-      box-shadow: inset 0 2px 2px -2px $warm-grey;
       background: $ubuntu-orange;
-      height: 14px;
-      margin: 0 0 10px;
       border: 0;
+      box-shadow: inset 0 2px 2px -2px $warm-grey;
       clear: both;
-    }
-  
-    .twelve-col {
-      display: table;
-      float: none;
-      margin-bottom: 7px;
+      height: 14px;
+      margin: 0 -10px 10px;
     }
     
-    div div {
-      display: block;
-      padding-left: 0;
-      margin-bottom: 20px;
+    div > div {
+      border-bottom: 1px dotted $warm-grey;
+      padding-bottom: 20px;
       
-      div {
-        display: block;
-        padding-left: 0;
-        margin-bottom: 0;
-      }
-      
-      &.feature-one {
-        padding-left: 0;
-      }
-      
-      &.feature-four {
-        margin-bottom: 0;
-        margin-right: 0;
+      &:last-child {
+        border: 0;
+        padding-bottom: 0;
       }
     }
   
-    > div {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    
     ul {
       margin-bottom: 5px;
-    }
-    
-    .active {
-      display: none;
     }
     
     h3 {
@@ -74,66 +44,28 @@
       font-weight: normal;
       margin-bottom: .75em;
     }
-    
-    .list a:after,
-    .link-arrow:after,
-    nav ul li h2 a:after {
-      content: ' \203A';
-    }
   }
   
   @media only screen and (min-width : 768px) {
-  
     .context-footer {
-      margin-bottom: 12px;
-      padding-left: 30px;
-      padding-right: 30px;
-      
-      div + div {
-        width: 31%;
-      }
-      
-      div .feature-four {
-        padding-bottom: 20px;
+      div > div {
+        border: none;
+        padding-bottom: 0;
       }
       
       hr {
         margin: 0 -30px 40px;
       }
+    }
+  } // end @media only screen and (max-width : 768px)
+    
+  @media only screen and (min-width: 984px) {
+    .context-footer {
+      padding: 0 20px;
       
-      > div {
-        padding-left: 0;
-        padding-right: 0;
+      hr {
+        margin: 0 -20px 40px;
       }
     }
-  
-  } // end @media only screen and (max-width : 768px)
-  
-  @media only screen and (min-width : 769px) {
-  
-  } //@media only screen and (min-width : 769px)
-  
-  @media only screen and (min-width: 984px) {
-    
-    .context-footer {
-      padding: 40px 40px 20px;
-    }
-    
-    .context-footer {
-      padding: 0 40px;
-    }
-    
-    .context-footer div div {
-      display: table-cell;
-      float: none;
-      padding-left: 20px;
-      margin-bottom: 0;
-    }
-    
-    .context-footer hr {
-      margin: 0 -40px 40px;
-    }
-  
   } // end @media only screen and (min-width: 984px)
-
 }
