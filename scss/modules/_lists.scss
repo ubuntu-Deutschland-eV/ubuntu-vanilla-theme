@@ -11,8 +11,8 @@
 ///     <li>...</li>
 ///   </ul>
 @mixin ubuntu-lists {
-  
-  /// Compact style lists with ticks 
+
+  /// Compact style lists with ticks
   .list-ticks--compact {
     @extend %list-ticks--compact;
 
@@ -21,7 +21,7 @@
     }
   }
 
-  /// Canonical style lists with ticks 
+  /// Canonical style lists with ticks
   .list-ticks--canonical {
     @extend %list-ticks;
 
@@ -30,10 +30,10 @@
     }
   }
 
-  /// Canonical compact style lists with ticks 
+  /// Canonical compact style lists with ticks
   .list-ticks--canonical-compact {
     @extend %list-ticks--compact;
-  
+
     li {
       background-image: svg-tick($canonical-aubergine);
     }

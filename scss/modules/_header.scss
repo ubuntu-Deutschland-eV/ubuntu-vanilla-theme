@@ -8,19 +8,19 @@
 
 /// Default header styling
 @mixin ubuntu-header() {
-  
+
   @media only screen and (min-width: $navigation-threshold) {
     .banner {
       margin-bottom: 30px;
     }
   }
-  
+
   .banner .nav-primary ul {
     border: 0;
-    
+
     li {
       border-left-color: darken($brand-color, 4%);
-                  
+
       ul {
         box-shadow: 0 2px 2px -1px $warm-grey;
         border-radius: 10px;
@@ -43,29 +43,29 @@
     li a.active:visited {
       border-left: 1px solid lighten($brand-color, 4%);
       font-weight: normal;
-      
+
       &:hover {
         background: lighten($brand-color, 6%);
         box-shadow: none;
         color: $white;
       }
     }
- 
+
     ul {
       @media only screen and (min-width: $navigation-threshold) {
         display: none;
       }
-      
+
       li {
         border: 0;
       }
-      
+
       li:last-child {
         border: 0;
       }
 
     }
-    
+
     li ul li a,
     li ul li a:link,
     li ul li a:visited {
@@ -76,25 +76,25 @@
       text-align: left;
       width: 186px;
     }
-    
+
     li ul li a:link:hover,
     li ul li a:visited:hover {
       background: none;
       color: $ubuntu-orange;
     }
-        
+
     li ul li.first a:link,
     li ul li.first a:visited,
     li ul li:first-of-type a:link {
       padding: 10px 0 0 14px;
     }
-    
+
     li ul li.active a:link,
     li ul li.active a:visited {
       background: none;
     }
-    
-    li:hover ul:after {
+
+    li:hover ul::after {
       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYODgYVPPJJpQAAAT9JREFUKM+dkD9IAnEUx7+/IkVxFaxoKYxIWhqKwJw0JAJ315Yac8+1tUFo6HCp34XRdRp11z+J4BzckqShPzdEQ5G/EhPO6V5Tcg3G0QcePHjvffjygB4oXAIApFMxyPlcWM7nwulU7NfMNQqXGABsZNcCCpcKtapBtapBCpcK2fXlAAAcy3vMlUxTdgEAO9ubybPiPjWFoE6nQ5ZlUfNDULl0RAdSPuncddL30+gnCgOAlngLaocyn4nG9fmFJXj9fhARAMDr82MuEcfk7LSuFQu8DTvovO1SuTxlAKCqPFO5Ov/6FIIsy/qzROOdrst6S1V5xunomo0LrT4yOh4JDg6BMXfvIdvGs/mExutLPZpYnAIAdmNUVuwBbI1NRODxePEf2u0WHu9u4ev3rTLTfKBQaNh1qp5piWCa9/gGBheo3r6AmYcAAAAASUVORK5CYII=') no-repeat;
       content: '';
       display: block;
@@ -105,12 +105,12 @@
       width: 200px;
       z-index: 999;
     }
-    
-    li:hover ul { 
-      display: block; 
+
+    li:hover ul {
+      display: block;
     }
   }
-  
+
   @media only screen and (min-width : $breakpoint-large) {
     .banner .logo {
       margin-left: 0;
