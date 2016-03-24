@@ -18,6 +18,7 @@
 @import 'modules/boxes';
 @import 'modules/lists';
 @import 'modules/breadcrumbs';
+@import 'modules/search';
 
 @mixin ubuntu-vanilla-theme {
   @include vanilla;
@@ -32,4 +33,5 @@
   @include ubuntu-boxes;
   @include ubuntu-lists;
   @include ubuntu-breadcrumbs;
+  @include ubuntu-search;
 }
