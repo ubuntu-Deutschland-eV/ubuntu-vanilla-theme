@@ -9,7 +9,7 @@
 /// Default header styling
 @mixin ubuntu-header() {
 
-  @media only screen and (min-width: $navigation-threshold) {
+  @media only screen and (min-width: $breakpoint-large + 1) {
     .banner {
       margin-bottom: 30px;
     }
@@ -111,7 +111,7 @@
     }
   }
 
-  @media only screen and (min-width : $breakpoint-large) {
+  @media only screen and (min-width : $breakpoint-large + 1) {
     .banner .logo {
       margin-left: 0;
     }
