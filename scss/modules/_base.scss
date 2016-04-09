@@ -7,9 +7,14 @@
 /// Base classes
 /// @group Utils
 @mixin ubuntu-base {
-  @media only screen and (min-width : $breakpoint-medium) {
-    body {
-      background: url('#{$asset-path}img/backgrounds/image-background-paper.png') repeat-y center top $light-grey;
+  body {
+    background-color: $light-grey;
+    background-image: url('#{$asset-path}img/backgrounds/image-background-paper.png?w=$breakpoint-medium');
+    background-position: center top;
+    background-repeat: repeat-y;
+
+    @media only screen and (min-width : $breakpoint-medium) {
+      background-image: url('#{$asset-path}img/backgrounds/image-background-paper.png');
     }
   }
 }
