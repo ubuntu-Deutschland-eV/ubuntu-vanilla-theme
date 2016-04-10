@@ -41,7 +41,10 @@
     li a:visited,
     li a.active:link,
     li a.active:visited {
-      border-left: 1px solid lighten($brand-color, 4%);
+      @media only screen and (min-width: $breakpoint-medium) {
+        border-left: 1px solid lighten($brand-color, 4%);
+      }
+      
       font-weight: normal;
 
       &:hover {
