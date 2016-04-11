@@ -11,7 +11,7 @@
     box-sizing: border-box;
     clear: both;
     display: block;
-    font-size: .875em;
+    ///font-size: .875em;
     padding: 0 10px;
     position: relative;
     width: 100%;
@@ -40,13 +40,13 @@
     }
 
     h3 {
-      font-size: 1.5em;
+      font-size: 1em;
       font-weight: normal;
       margin-bottom: .75em;
     }
   }
 
-  @media only screen and (min-width : 768px) {
+  @media only screen and (min-width : $breakpoint-medium) {
     .context-footer {
       div > div {
         border: 0;
@@ -56,15 +56,35 @@
       hr {
         margin: 0 -30px 40px;
       }
+
+      h3 {
+        font-size: 1.07143125em;
+      }
+
+      p,
+      li,
+      a {
+        font-size: .9375em;
+      }
     }
   } // end @media only screen and (max-width : 768px)
 
-  @media only screen and (min-width: 984px) {
+  @media only screen and (min-width: $breakpoint-large) {
     .context-footer {
       padding: 0 20px;
 
       hr {
         margin: 0 -20px 40px;
+      }
+
+      h3 {
+        font-size: 1.14286em;
+      }
+
+      p,
+      li,
+      a {
+        font-size: 1em;
       }
     }
   } // end @media only screen and (min-width: 984px)
