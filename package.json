@@ -17,24 +17,24 @@
       "email": "graham.bancroft@canonical.com"
     },
     {
-      "name": "Tristram Oaten",
-      "email": "tristram.oaten@canonical.com"
-    },
-    {
-      "name": "Robin Winslow",
-      "email": "robin.winslow@canonical.com"
-    },
-    {
       "name": "Karl Williams",
       "email": "karl.williams@canonical.com"
+    },
+    {
+      "name": "Peter Mahnke",
+      "email": "peter.mahnke@canonical.com"
     },
     {
       "name": "Richard McCartney",
       "email": "richard.mccartney@canonical.com"
     },
     {
-      "name": "Peter Mahnke",
-      "email": "peter.mahnke@canonical.com"
+      "name": "Robin Winslow",
+      "email": "robin.winslow@canonical.com"
+    },
+    {
+      "name": "Tristram Oaten",
+      "email": "tristram.oaten@canonical.com"
     }
   ],
   "keywords": [
