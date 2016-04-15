@@ -17,24 +17,28 @@
       "email": "graham.bancroft@canonical.com"
     },
     {
-      "name": "Tristram Oaten",
-      "email": "tristram.oaten@canonical.com"
-    },
-    {
-      "name": "Robin Winslow",
-      "email": "robin.winslow@canonical.com"
-    },
-    {
       "name": "Karl Williams",
       "email": "karl.williams@canonical.com"
+    },
+    {
+      "name": "Peter Mahnke",
+      "email": "peter.mahnke@canonical.com"
     },
     {
       "name": "Richard McCartney",
       "email": "richard.mccartney@canonical.com"
     },
     {
-      "name": "Peter Mahnke",
-      "email": "peter.mahnke@canonical.com"
+      "name": "Robin Winslow",
+      "email": "robin.winslow@canonical.com"
+    },
+    {
+      "name": "Tristram Oaten",
+      "email": "tristram.oaten@canonical.com"
+    },
+    {
+      "name": "Will Moggridge",
+      "email": "will.moggridge@canonical.com"
     }
   ],
   "keywords": [
@@ -74,6 +78,6 @@
     "sassdoc": "2.1.20"
   },
   "dependencies": {
-    "vanilla-framework": "^0.0.69"
+    "vanilla-framework": "^0.0.71"
   }
 }
