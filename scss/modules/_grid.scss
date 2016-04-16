@@ -15,9 +15,13 @@
     background: $white;
     border-radius: 4px;
     box-shadow: 0 0 3px $mid-grey;
-    margin: 10px 0 30px;
-    padding-bottom: 20px;
-    
+    margin: 10px 0 0;
+    padding-bottom: 0;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      margin: 10px 0 30px;
+      padding-bottom: 20px;
+    }
     @media only screen and (max-width: $breakpoint-large + 1) {
       margin: 0;
     }
