@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     sassdoc = require('sassdoc'),
     util = require('util');
 
+// ../ is here just for reference.
 var sassImportPaths = ['../', 'node_modules'];
 
 /* Helper functions */

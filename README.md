@@ -10,11 +10,30 @@ Install the Node package into your project:
 npm install ubuntu-vanilla-theme  # Installs the theme with the framework within
 ```
 
+Configure Sass import paths.
+
+Composer:
+
+```
+add_import_path "node_modules"
+```
+
+Gulp:
+
+```javascript
+gulp.task('sass', function() {
+    return gulp.src('[your-sass-directory]/**/*.scss')
+      .pipe(sass({
+        includePaths: ['node_modules']
+      }))
+});
+```
+
 Then reference it from your own Sass file that is built to generate your sites CSS:
 
 ``` sass
 // Import the theme
-@import "../../node_modules/ubuntu-vanilla-theme/scss/theme";
+@import "ubuntu-vanilla-theme/scss/theme";
 // Run the theme
 @include ubuntu-vanilla-theme;
 ```
