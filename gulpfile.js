@@ -9,6 +9,9 @@ var gulp = require('gulp'),
     sassdoc = require('sassdoc'),
     util = require('util');
 
+// ../ is here just for reference.
+var sassImportPaths = ['../', 'node_modules'];
+
 /* Helper functions */
 function throwSassError(sassError) {
     throw new gutil.PluginError({
@@ -42,7 +45,8 @@ gulp.task('sass', function() {
     return gulp.src('scss/**/*.scss')
         .pipe(sass({
             style: 'expanded',
-            onError: throwSassError
+            onError: throwSassError,
+            includePaths: ['scss'].concat(sassImportPaths)
         }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         .pipe(gulp.dest('build/css/'))
@@ -60,7 +64,7 @@ gulp.task('build', ['sasslint', 'sass', 'docs']);
 
 gulp.task('sass-lite', function() {
     return gulp.src('scss/**/*.scss')
-        .pipe(sass({ style: 'expanded', errLogToConsole: true }))
+        .pipe(sass({ style: 'expanded', errLogToConsole: true, includePaths: ['scss'].concat(sassImportPaths) }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         .pipe(gulp.dest('build/css/'));
 });
