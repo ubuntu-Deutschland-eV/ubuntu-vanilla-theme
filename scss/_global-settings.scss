@@ -1,5 +1,9 @@
 /// asset server domain
-$asset-server: 'https://assets.ubuntu.com/v1/';
+$asset-server: '/theme/';
+$asset-path: '/theme/';
+
+/// own fonts
+$base-font-family: "my_font, Arial, 'libra sans', sans-serif";
 
 /// the theme's core brand colour
 $brand-color: #e95420;
@@ -27,4 +31,4 @@ $ubuntu-orange: #e95420;
 $box-solid-grey: #efefef;
 
 /// Threshold to switch to small screen naviagtion
-$navigation-threshold:  860px !default;
+///$navigation-threshold:  860px !default;
